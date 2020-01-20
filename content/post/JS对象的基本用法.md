@@ -43,7 +43,7 @@ let key = 'name'; obj[key] = 'frank'
 我们再来看一下易出错的赋值
 
 
-<font color=red>obj[name] = 'frank'</font> // 错在name是变量
+<font color=red>obj[name] = 'frank'</font> // 错在name是变量<div>
 let key = 'name';<font color=red>obj.key = 'frank'</font>  // 错在.key是字符串不是变量
 
 ## 5.'name' in obj和obj.hasOwnProperty('name') 的区别

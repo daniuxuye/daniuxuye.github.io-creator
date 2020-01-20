@@ -42,10 +42,10 @@ let key = 'name'; obj[key] = 'frank'
 ```
 我们再来看一下易出错的赋值
 
-
-<font color=red>obj[name] = 'frank'</font> // 错在name是变量<div>
-let key = 'name';<font color=red>obj.key = 'frank'</font>  // 错在.key是字符串不是变量
-
+```
+obj[name] = 'frank' // 错在name是变量<div>
+let key = 'name';obj.key = 'frank' // 错在.key是字符串不是变量
+```
 ## 5.'name' in obj和obj.hasOwnProperty('name') 的区别
 * 他们两个都是判断属性名是否存在于对象中
 * 区别是in会继承原型链上的属性，而obj.hasOwnProperty不会继承原型链中的属性
